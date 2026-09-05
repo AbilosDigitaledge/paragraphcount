@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --color-brand-cream: #F5F2ED;
+  --color-brand-charcoal: #1A1A1A;
+  --color-brand-rust: #C2410C;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Custom editorial aesthetics */
+.editorial-border {
+  border-color: var(--color-brand-charcoal);
+}
+
+.dark .editorial-border {
+  border-color: #3A3630;
+}
+

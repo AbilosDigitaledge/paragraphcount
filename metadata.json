@@ -1,0 +1,6 @@
+{
+  "name": "ParagraphCount",
+  "description": "Count words in each paragraph instantly. Paste your text to see paragraph-by-paragraph word counts, characters, sentences, reading time, and more. Free and private.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
