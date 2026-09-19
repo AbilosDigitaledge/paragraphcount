@@ -15,12 +15,13 @@ This document contains critical project-specific configuration rules, assets, an
        crossorigin="anonymous"></script>
   ```
 
-### Google Analytics (gtag.js)
-- **Measurement ID**: `G-H0V18FRXGQ`
-- **Location**: Immediately after the opening `<head>` tag in `/index.html`
-- **Snippet**:
+### Google Analytics & Ads (gtag.js)
+- **Measurement ID**: `G-H0V18FRXGQ` (Analytics)
+- **Conversion ID**: `AW-10857296246` (AdWords / Google Ads Tag)
+- **Location**: `G-H0V18FRXGQ` is immediately after the opening `<head>` tag, and `AW-10857296246` is placed immediately before the closing `</head>` tag in `/index.html`.
+- **Snippets**:
   ```html
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0V18FRXGQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -28,6 +29,17 @@ This document contains critical project-specific configuration rules, assets, an
     gtag('js', new Date());
 
     gtag('config', 'G-H0V18FRXGQ');
+  </script>
+  ```
+  ```html
+  <!-- Google Ads tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10857296246"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-10857296246');
   </script>
   ```
 
